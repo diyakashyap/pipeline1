@@ -4,7 +4,10 @@ pipeline
   stages
   {
     stage('scm checkout')
-    {steps{}
+    {steps{ git 'https://github.com/diyakashyap/pipeline1.git'}
     }
+
+    stage('message')
+    {steps{sh 'echo hello'}}
   }
 }
