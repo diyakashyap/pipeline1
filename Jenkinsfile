@@ -4,7 +4,7 @@ pipeline
   stages
   {
     stage('scm checkout')
-    {steps{ git https://github.com/diyakashyap/pipeline1.git}
+    {steps{ git 'https://github.com/diyakashyap/pipeline1.git'}
     }
 
     stage('message')
